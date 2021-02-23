@@ -1,0 +1,418 @@
+@media(max-width:1366px) {
+
+    .header {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 25px 0;
+        top: 0;
+    }
+
+    .title {
+        padding-top: 100px;
+    }
+
+    .top_title {
+        padding-top: 100px;
+    }
+
+
+
+    .products_slider-box {
+        padding-top: 0;
+
+        .products_slider-text {
+            bottom: auto;
+            left: auto;
+            top: -105px;
+            right: 0;
+        }
+    }
+
+    .benefits_item {
+        margin-bottom: 80px;
+    }
+
+    .questions {
+
+
+
+        .title {
+
+            padding-top: 100px;
+            margin-bottom: 20px;
+
+        }
+
+
+
+
+    }
+
+    .questions_item-title {
+        line-height: 22px;
+        font-size: 18px;
+        padding: 16px 10px 16px 30px;
+    }
+
+    .questions_item.questions_item-active .questions_item-text {
+        padding: 0 20px 20px 30px;
+    }
+
+    .questions_item-title::after {
+        width: 60px;
+        height: 54px;
+        right: -60px;
+
+    }
+
+
+
+
+}
+
+
+
+
+
+@media(max-width:1272px) {
+    .specification_inner .mavic {
+        max-width: 550px;
+
+    }
+
+    .specification_inner {
+        flex-direction: column;
+
+
+        .specification_box {
+            border: 1px solid white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .specification_box-1 {
+            margin-top: 0px;
+
+        }
+
+        .specification_box::before {
+
+            display: none;
+        }
+
+        .specification_box-2 {
+            margin-top: 40px;
+
+        }
+
+        .specification_box-3 {
+            margin-top: 0px;
+
+        }
+
+        .specification_box-4 {
+            margin-top: 40px;
+
+        }
+
+    }
+
+    .questions {
+        .title {
+            padding-top: 100px;
+            margin-bottom: 10px;
+
+        }
+    }
+}
+
+@media(max-width:1100px) {
+
+
+
+    .menu {
+        order: 1;
+
+        .menu_list {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding-left: 24px;
+            padding-bottom: 150px;
+            background-color: rgba(#1c1c1c, .9);
+            z-index: -1;
+            display: flex;
+            padding-top: 90px;
+            flex-direction: column;
+            justify-content: space-around;
+            transform: translateY(-100%);
+            transition: transform .5s;
+
+            &-active {
+                transform: translateY(0);
+            }
+        }
+
+        .menu_list-item+.menu_list-item {
+            padding: 0;
+
+        }
+    }
+
+    .menu_btn {
+        outline: none;
+        padding: 0;
+        cursor: pointer;
+
+        .menu_btn-line {
+            background-color: #e0e0e0;
+            width: 24px;
+            height: 2px;
+            display: block;
+            margin-bottom: 4px;
+            transition: opacity .6s;
+        }
+    }
+
+    .menu_btn.menu_btn-active {
+        .menu_btn-line {
+            opacity: 0;
+            transition: opacity 0s;
+        }
+
+        &::after {
+            width: 24px;
+            transform: translateY(-6px) rotate(-135deg);
+        }
+
+        &::before {
+            width: 24px;
+            transform: translateY(6px) rotate(135deg);
+        }
+
+
+    }
+
+
+
+    .menu_btn::before,
+    .menu_btn::after {
+        content: "";
+        width: 24px;
+        height: 2px;
+        background-color: #e0e0e0;
+        display: block;
+        margin-bottom: 4px;
+        transition: transform .3s;
+
+    }
+
+    .menu_btn::after {
+        margin-bottom: 0;
+        width: 16px;
+        margin-left: auto;
+    }
+
+    .header_btn {
+        margin-right: 0;
+    }
+
+    .top_title {
+        font-size: 75px;
+        line-height: 90px;
+        margin-bottom: 20px;
+    }
+
+
+    .products_text {
+        padding-right: 15px;
+    }
+
+    .products_slider-box {
+        padding-right: 20px;
+    }
+
+    .benefits .title {
+        padding-top: 80px;
+    }
+
+    .benefits_item {
+        margin-bottom: 80px;
+    }
+
+
+
+
+
+}
+
+@media(max-width:1024px) {
+    .title {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 35px;
+
+    }
+
+
+    .products_slider-box .products_slider-text {
+        font-size: 20px;
+        line-height: 22px;
+        top: -85px;
+
+    }
+
+    .products_text {
+        padding-right: 0px;
+        max-width: 100%;
+        margin-bottom: 120px;
+    }
+
+    .products_slider {
+        margin-left: auto;
+    }
+
+    .products_slider-box {
+        padding-bottom: 80px;
+    }
+
+
+}
+
+
+@media(max-width:940px) {
+    .products_inner {
+        display: block;
+    }
+
+    .contacts_inner {
+        flex-wrap: wrap;
+    }
+
+    .contacts_form {
+        width: 100%;
+        margin-right: 0;
+        order: 1;
+    }
+
+
+
+}
+
+@media(max-width:787px) {
+    .questions_items {
+        padding-right: 60px;
+
+    }
+
+    .contacts_inner {
+        padding-left: 0;
+    }
+}
+
+@media(max-width:680px) {
+    .products_inner {
+        padding-left: 0;
+    }
+
+    .title {
+        padding-left: 0;
+        font-size: 26px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+
+    .products_text p {
+        margin-bottom: 10px;
+    }
+
+    .products_text {
+        margin-bottom: 100px;
+    }
+
+    .products_slider {
+        max-width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        &::before {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .specification_inner .mavic {
+        max-width: 450px;
+
+    }
+
+
+
+    .benefits {
+        .benefits_item {
+            flex-direction: column;
+            margin-bottom: 30px;
+            padding: 0 10px;
+
+            .benefits_info {
+                width: 240px;
+                padding-top: 10px;
+
+            }
+
+            .benefits_num {
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media(max-width:500px) {
+    .top_title {
+        font-size: 60px;
+        line-height: 80px;
+        margin-bottom: 15px;
+    }
+
+    .contacts_form-line {
+        display: block;
+    }
+
+
+    .contacts_form-input {
+        width: 100%;
+        margin-top: 10px;
+
+    }
+}
+
+@media(max-width:390px) {
+    .top_title {
+        display: none;
+    }
+
+    .mavic {
+        width: 100%;
+    }
+
+
+
+    .contacts_social {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+}
